@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+﻿<!DOCTYPE html>
 <html lang="en">
 
 <head>
@@ -305,7 +305,8 @@
                                     class="openModal flex-1 bg-white border border-slate-200 rounded-2xl p-4 flex items-center gap-4 hover:shadow-lg hover:border-orange-500 transition-all group text-left relative overflow-hidden">
                                     <div
                                         class="h-10 w-10 bg-slate-50 rounded-lg flex items-center justify-center group-hover:bg-orange-50 transition-colors flex-shrink-0">
-                                        <i class="fas fa-users text-2xl text-slate-700 group-hover:text-orange-500 transition-colors"></i>
+                                        <i
+                                            class="fas fa-users text-2xl text-slate-700 group-hover:text-orange-500 transition-colors"></i>
                                     </div>
                                     <div>
                                         <h3 class="text-slate-900 font-bold text-base">TEQ HUB</h3>
@@ -349,12 +350,12 @@
                                 class="relative w-full max-w-[360px] sm:max-w-[400px] lg:max-w-[420px] hero-tilt-container">
 
                                 <!-- 3D Spline Model & Mobile Fallback Image -->
-                                <div class="relative rounded-[32px] overflow-hidden h-[420px]">
+                                <div class="relative rounded-[32px] overflow-hidden h-[300px] lg:h-[420px]">
                                     <spline-viewer id="hero-spline"
                                         url="https://prod.spline.design/Bi4UqtdOOu5F6ZkD/scene.splinecode"
                                         class="absolute inset-0 w-full h-[120%] top-0 hidden lg:block"></spline-viewer>
                                     <img src="assets/robot.png" alt="Robot"
-                                        class="w-full h-full object-contain block lg:hidden" />
+                                        class="w-full h-full object-cover object-top sm:object-contain block lg:hidden scale-110" />
                                 </div>
 
                                 <!-- Floating Card: Label (top-left, like "Creating Marketing Models...") -->
@@ -624,7 +625,7 @@
                         About Us</h2>
 
                     <div class="text-center mb-8 reveal">
-                        <div class="text-xl text-slate-500 max-w-2xl mx-auto">
+                        <div class="text-base sm:text-xl text-slate-500 max-w-2xl mx-auto px-4">
                             Built On Values, Driven By Innovation
                         </div>
                     </div>
@@ -656,7 +657,7 @@
                         <div class="grid grid-cols-2 sm:grid-cols-3 gap-4 mt-8 pb-4 w-full">
                             <!-- Google Review Card -->
                             <div
-                                class="bg-[#ffffff] rounded-2xl p-4 flex items-center gap-4 border border-gray-200 shadow-sm transition-all hover:shadow-md">
+                                class="bg-[#ffffff] rounded-2xl p-2.5 sm:p-4 flex items-center gap-2 sm:gap-4 border border-gray-200 shadow-sm transition-all hover:shadow-md">
                                 <div class="flex-shrink-0">
                                     <img src="https://upload.wikimedia.org/wikipedia/commons/c/c1/Google_%22G%22_logo.svg"
                                         alt="Google Logo" class="w-8 h-8">
@@ -678,7 +679,7 @@
 
                             <!-- ISO Card -->
                             <div
-                                class="bg-[#ffffff] rounded-2xl p-4 flex items-center gap-4 border border-gray-200 shadow-sm transition-all hover:shadow-md">
+                                class="bg-[#ffffff] rounded-2xl p-2.5 sm:p-4 flex items-center gap-2 sm:gap-4 border border-gray-200 shadow-sm transition-all hover:shadow-md">
                                 <div class="flex-shrink-0">
                                     <img src="assets/iso.webp" alt="ISO Certified" class="h-8 w-auto">
                                 </div>
@@ -691,7 +692,7 @@
                             </div>
 
                             <div
-                                class="bg-[#ffffff] rounded-2xl p-4 flex items-center gap-4 border border-gray-200 shadow-sm transition-all hover:shadow-md">
+                                class="bg-[#ffffff] rounded-2xl p-2.5 sm:p-4 flex items-center gap-2 sm:gap-4 border border-gray-200 shadow-sm transition-all hover:shadow-md">
                                 <div class="flex-shrink-0">
                                     <img src="assets/iso.webp" alt="ISO Certified" class="h-8 w-auto">
                                 </div>
@@ -705,7 +706,7 @@
 
                             <!-- Ministry Card -->
                             <div
-                                class="bg-[#ffffff] rounded-2xl p-4 flex items-center gap-4 border border-gray-200 shadow-sm transition-all hover:shadow-md">
+                                class="bg-[#ffffff] rounded-2xl p-2.5 sm:p-4 flex items-center gap-2 sm:gap-4 border border-gray-200 shadow-sm transition-all hover:shadow-md">
                                 <div class="flex-shrink-0">
                                     <img src="assets/ministry.webp" alt="Ministry Affairs" class="h-8 w-auto">
                                 </div>
@@ -720,22 +721,23 @@
 
                             <!-- Excellence Card -->
                             <div
-                                class="bg-[#ffffff] rounded-2xl p-4 flex items-center gap-4 border border-gray-200 shadow-sm transition-all hover:shadow-md">
-                                <div class="flex items-center gap-2">
-                                    <i class="fas fa-leaf text-orange-400 text-xl rotate-12"></i>
+                                class="bg-[#ffffff] rounded-2xl p-2.5 sm:p-4 flex items-center justify-center border border-gray-200 shadow-sm transition-all hover:shadow-md">
+                                <div class="flex items-center justify-center gap-1 sm:gap-2 w-full">
+                                    <i class="fas fa-leaf text-orange-400 text-lg sm:text-xl rotate-12"></i>
                                     <div class="flex flex-col items-center">
                                         <div class="text-[9px] font-bold text-slate-400 uppercase">Featured</div>
                                         <div
-                                            class="text-[12px] font-black text-black text-slate-800 leading-tight uppercase text-center m-0">
+                                            class="text-[11px] sm:text-[12px] font-black text-black text-slate-800 leading-tight uppercase text-center m-0">
                                             TPL Awards</div>
                                     </div>
-                                    <i class="fas fa-leaf text-orange-400 text-xl -rotate-12 scale-x-[-1]"></i>
+                                    <i
+                                        class="fas fa-leaf text-orange-400 text-lg sm:text-xl -rotate-12 scale-x-[-1]"></i>
                                 </div>
                             </div>
 
                             <!-- Partner Card -->
                             <div
-                                class="bg-[#ffffff] rounded-2xl p-4 flex items-center gap-4 border border-gray-200 shadow-sm transition-all hover:shadow-md">
+                                class="bg-[#ffffff] rounded-2xl p-2.5 sm:p-4 flex items-center gap-2 sm:gap-4 border border-gray-200 shadow-sm transition-all hover:shadow-md">
                                 <div class="flex-shrink-0 bg-slate-50 p-1.5 rounded-lg">
                                     <img src="assets/tally.webp" alt="Tally Authorized" class="h-7 w-auto">
                                 </div>
@@ -756,7 +758,7 @@
                     <div class="w-full lg:w-[50%] lg:mt-0 reveal reveal-right flex flex-col justify-center">
                         <!-- Carousel Container -->
                         <div
-                            class="relative w-full h-[380px] sm:h-[450px] lg:h-[400px] overflow-hidden rounded-[2rem] shadow-lg group">
+                            class="relative w-full h-[250px] sm:h-[450px] lg:h-[400px] overflow-hidden rounded-[2rem] shadow-lg group">
                             <!-- Image Track -->
                             <div id="about-image-track"
                                 class="flex w-full h-full transition-transform duration-700 ease-in-out">
@@ -795,7 +797,7 @@
             <div class="max-w-7xl mx-auto px-6 rounded-2xl bg-slate-100 w-[95vw] py-10">
                 <div class="grid grid-cols-2 lg:grid-cols-4 gap-8 lg:gap-12">
                     <div class="text-center reveal">
-                        <div class="text-4xl font-black text-slate-900">
+                        <div class="text-3xl sm:text-4xl font-black text-slate-900">
                             <span class="count text-t4teq-blue" data-target="50000">0</span><span
                                 class="text-orange-500">+</span>
                         </div>
@@ -803,7 +805,7 @@
                     </div>
 
                     <div class="text-center reveal delay-200">
-                        <div class="text-4xl font-black text-slate-900">
+                        <div class="text-3xl sm:text-4xl font-black text-slate-900">
                             <span class="count" data-target="20" style="color: #000067;">0</span><span
                                 class="text-orange-500">+</span>
                         </div>
@@ -812,7 +814,7 @@
                     </div>
 
                     <div class="text-center reveal delay-300">
-                        <div class="text-4xl font-black text-slate-900">
+                        <div class="text-3xl sm:text-4xl font-black text-slate-900">
                             <span class="count" data-target="100" style="color: #000067;">0</span><span
                                 class="text-orange-500">+</span>
                         </div>
@@ -820,7 +822,7 @@
                         </div>
                     </div>
                     <div class="text-center reveal delay-100">
-                        <div class="text-4xl font-black text-slate-900">
+                        <div class="text-3xl sm:text-4xl font-black text-slate-900">
                             <span class="count" data-target="5000" style="color: #000067;">0</span><span
                                 class="text-orange-500">+</span>
                         </div>
@@ -841,7 +843,7 @@
                     <h2 class="text-3xl sm:text-4xl font-bold text-black">Courses</h2>
                 </div>
                 <div class="text-center mb-8 reveal">
-                    <div class="text-xl text-slate-500 max-w-2xl mx-auto">
+                    <div class="text-base sm:text-xl text-slate-500 max-w-2xl mx-auto px-4">
                         Explore our comprehensive training programs
                     </div>
                 </div>
@@ -851,8 +853,12 @@
                     class="w-full rounded-[2rem] border border-2 border-slate-100 p-6 sm:p-8 mb-8 shadow-sm hover:shadow-md transition-shadow duration-300 reveal scroll-mt-24">
                     <div class="flex flex-col md:flex-row gap-6 lg:gap-8 items-center md:items-stretch">
                         <!-- Left: Heading & Description -->
-                        <div class="md:w-[70%] flex flex-col justify-center text-center md:text-left md:pr-4">
-                            <h3 class="text-3xl lg:text-4xl font-black text-slate-900 mb-2">Tally</h3>
+                        <div class="md:w-[70%] flex flex-col justify-center text-left md:pr-4">
+                            <div class="flex items-center justify-start gap-3 mb-2">
+                                <img src="assets/tally.webp" alt="Tally Logo" class="h-8 lg:h-10 w-auto"
+                                    style="filter: brightness(0) saturate(100%) invert(18%) sepia(91%) saturate(3078%) hue-rotate(222deg) brightness(97%) contrast(102%);">
+                                <h3 class="text-3xl lg:text-4xl font-black text-slate-900">Tally</h3>
+                            </div>
                             <p class="text-[#574F4A] font-medium leading-relaxed max-w-4xl">
                                 Master accounting, payroll, and taxation with our comprehensive Tally training. Develop
                                 the skills needed to excel in modern financial management and business accounting
@@ -1182,14 +1188,14 @@
             </h2>
         </div>
         <div class="text-center mb-8 mt-2 reveal">
-            <div class="text-[20px] leading-tight text-slate-500 max-w-2xl mx-auto px-4">
+            <div class="text-base sm:text-xl text-slate-500 max-w-2xl mx-auto px-4">
                 Our alumni are placed in top tech companies worldwide
             </div>
         </div>
 
 
         <section class="overflow-hidden py-2 mt-[10px]" class="flex-center-important px-4 reveal">
-            <div class="bg-gray-100 p-6 w-[95vw] rounded-3xl max-w-screen-2xl mx-auto px-4 sm:px-12">
+            <div class="bg-gray-100 p-4 w-[95vw] rounded-3xl max-w-screen-2xl mx-auto px-4 sm:px-12">
 
 
                 <div class="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-6 gap-4 sm:gap-8 w-full mx-auto">
@@ -1210,8 +1216,8 @@
                             <div class="h-full w-full flex items-center justify-center p-4 flex-shrink-0">
                                 <!-- cts -->
                                 <img src="assets/cts.png"
-                                    class="h-20 sm:h-20 w-auto object-contain transition duration-300 scale-[1.3] sm:scale-[1.5]" alt="cts"
-                                    title="CTS">
+                                    class="h-20 sm:h-20 w-auto object-contain transition duration-300 scale-[1.3] sm:scale-[1.5]"
+                                    alt="cts" title="CTS">
                             </div>
                         </div>
                     </div>
@@ -1278,8 +1284,8 @@
                             <div class="h-full w-full flex items-center justify-center p-4 flex-shrink-0">
                                 <!-- Hexaware -->
                                 <img src="assets/hexaware.webp"
-                                    class="h-20 sm:h-24 w-auto object-contain transition duration-300 scale-[1.3] sm:scale-[1.5]" alt="hexaware"
-                                    title="Hexaware" />
+                                    class="h-20 sm:h-24 w-auto object-contain transition duration-300 scale-[1.3] sm:scale-[1.5]"
+                                    alt="hexaware" title="Hexaware" />
                             </div>
                         </div>
                     </div>
@@ -1330,7 +1336,8 @@
                             <div class="h-full w-full flex items-center justify-center p-4 flex-shrink-0">
                                 <!-- wipro -->
                                 <svg xmlns="http://www.w3.org/2000/svg"
-                                    class="h-10 sm:h-14 w-auto transition duration-300 scale-[1.3] sm:scale-[1.5]" viewBox="48 101.6 504 396.8">
+                                    class="h-10 sm:h-14 w-auto transition duration-300 scale-[1.3] sm:scale-[1.5]"
+                                    viewBox="48 101.6 504 396.8">
                                     <title>Wipro</title>
                                     <path fill="#2b4c87"
                                         d="M504.4 257.3c2.9 10.7 13.8 17 24.5 14.2 10.7-2.9 17-13.8 14.2-24.5-2.9-10.7-13.8-17-24.5-14.2-10.7 2.9-17 13.9-14.2 24.5m-27.2 21.5c7.3-2 11.6-9.4 9.7-16.7-2-7.3-9.4-11.6-16.7-9.7-7.3 2-11.6 9.4-9.7 16.7s9.4 11.6 16.7 9.7m-40.1 7c5.3-1.4 8.5-6.9 7.1-12.3-1.4-5.3-6.9-8.5-12.3-7.1-5.3 1.4-8.5 6.9-7.1 12.3 1.4 5.3 6.9 8.5 12.3 7.1" />
@@ -1451,7 +1458,7 @@
                 <h2 class="text-3xl sm:text-4xl font-bold text-black text-center">Testimonials</h2>
             </div>
             <div class="text-center mb-8 reveal">
-                <div class="text-xl text-slate-500 max-w-2xl mx-auto">
+                <div class="text-base sm:text-xl text-slate-500 max-w-2xl mx-auto px-4">
                     Hear from our students about their T4TEQ experience
                 </div>
             </div>
@@ -1721,7 +1728,7 @@
                                 class="absolute -bottom-2 right-0 w-full">
                         </span>
                     </h2>
-                    <div class="text-xl text-slate-500 max-w-2xl mx-auto mt-4 font-['Inter']">
+                    <div class="text-base sm:text-xl text-slate-500 max-w-2xl mx-auto px-4 mt-4">
                         Passionate People, Exceptional Talents
                     </div>
                 </div>
@@ -2336,7 +2343,8 @@
                             Gallery
                         </span>
                     </h2>
-                    <div class="text-center mt-4 reveal text-xl text-slate-500 max-w-2xl mx-auto font-['Inter']">
+                    <div
+                        class="text-center mt-4 reveal text-base sm:text-xl text-slate-500 max-w-2xl mx-auto px-4 font-['Inter']">
                         Glimpses of life and learning at T4TEQ
                     </div>
                 </div>

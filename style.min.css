@@ -1,4 +1,4 @@
-@keyframes marquee {
+﻿@keyframes marquee {
     0% {
         transform: translateX(0);
     }
@@ -980,7 +980,7 @@ html {
 }
 
 .bg-kishore {
-    background-image: url('assets/kishore.webp');
+    background-image: url('assets/kishore.jpg');
 }
 
 .bg-jayapriya {
