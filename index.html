@@ -837,7 +837,7 @@
 
         <!-- Course Section -->
         <section id="skills" data-nav-color="rgba(255, 255, 255, 0.95)" class="pt-2 sm:pt-4 bg-white">
-            <div class="max-w-7xl mx-auto px-4 sm:px-4">
+            <div class="max-w-7xl mx-auto px-4 sm:px-8 md:px-12 lg:px-16">
                 <!-- Section Header -->
                 <div class="text-center mb-3">
                     <h2 class="text-3xl sm:text-4xl font-bold text-black">Courses</h2>
@@ -848,43 +848,7 @@
                     </div>
                 </div>
 
-                <!-- Tally Course Card -->
-                <div id="tally-course"
-                    class="w-full rounded-[2rem] border border-2 border-slate-100 p-6 sm:p-8 mb-8 shadow-sm hover:shadow-md transition-shadow duration-300 reveal scroll-mt-24">
-                    <div class="flex flex-col md:flex-row gap-6 lg:gap-8 items-center md:items-stretch">
-                        <!-- Left: Heading & Description -->
-                        <div class="md:w-[70%] flex flex-col justify-center text-left md:pr-4">
-                            <div class="flex items-center justify-start gap-3 mb-2">
-                                <img src="assets/tally.webp" alt="Tally Logo" class="h-8 lg:h-10 w-auto"
-                                    style="filter: brightness(0) saturate(100%) invert(18%) sepia(91%) saturate(3078%) hue-rotate(222deg) brightness(97%) contrast(102%);">
-                                <h3 class="text-3xl lg:text-4xl font-black text-slate-900">Tally</h3>
-                            </div>
-                            <p class="text-[#574F4A] font-medium leading-relaxed max-w-4xl">
-                                Master accounting, payroll, and taxation with our comprehensive Tally training. Develop
-                                the skills needed to excel in modern financial management and business accounting
-                                operations efficiently.</p>
-                        </div>
 
-                        <!-- Right: Sections -->
-                        <div class="md:w-[30%] grid grid-cols-2 gap-4 relative w-full items-center">
-                            <!-- Vertical Line -->
-                            <div class="absolute left-1/2 top-2 bottom-2 w-px bg-slate-200 transform -translate-x-1/2">
-                            </div>
-
-                            <!-- Basics -->
-                            <div class="text-center md:text-left pr-3 flex flex-col justify-center">
-                                <h4 class="text-[20px] font-bold text-slate-800 mb-1">Basics</h4>
-                                <p class="text-slate-500 text-[15px] leading-tight">Payroll & basic GST concepts.</p>
-                            </div>
-
-                            <!-- Advanced -->
-                            <div class="text-center md:text-left pl-3 flex flex-col justify-center">
-                                <h4 class="text-[20px] font-bold text-slate-800 mb-1">Advanced</h4>
-                                <p class="text-slate-500 text-[15px] leading-tight">GST, Vouchers & taxation.</p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
 
                 <!-- Programming & Core Data Card -->
                 <div data-nav-color="rgba(168, 213, 186, 0.95)" style="background-color: #A8D5BA; z-index: 10;"
@@ -902,7 +866,7 @@
                     <!-- Description & Logos -->
                     <div class="mt-2 lg:flex lg:items-start lg:justify-between gap-4">
                         <p class="text-[#574F4A] md:w-[70%] text-lg font-medium pr-4">
-                            Master industry-standard programming languages and core data concepts. Gain hands-on
+                            Master industry-standard programming languages and data concepts. Gain hands-on
                             experience in Java, Python, SQL, and Data Structures to build for technical career.
                         </p>
 
@@ -1049,8 +1013,8 @@
                     <!-- Description & Logos -->
                     <div class="mt-2 lg:flex lg:items-start lg:justify-between gap-4">
                         <p class="text-[#574F4A] md:w-[70%] text-lg font-medium pr-4">
-                            Master the art of data-driven decision making and transform raw data into actionable
-                            business insights using Artificial Intelligence for smarter strategic outcomes.
+                            Master programming languages and data concepts. Gain hands-on experience in Java,
+                            Python, SQL, and Data Structures to build for technical career.
                         </p>
 
                         <!-- Logos -->
@@ -1121,8 +1085,8 @@
                     <!-- Description & Logos -->
                     <div class="mt-2 lg:flex lg:items-start lg:justify-between gap-4">
                         <p class="text-[#574F4A] md:w-[70%] text-lg font-medium pr-4">
-                            Create stunning user experiences and high-performance applications from UI/UX design to
-                            modern mobile development with scalable cross-platform deployment solutions.
+                            Create user experiences and high-performance applications from UI/UX design to mobile
+                            development with scalable cross-platform deployment solutions.
                         </p>
 
                         <!-- Logos -->
@@ -1178,6 +1142,52 @@
                     <!-- Bottom Action -->
 
                 </div>
+
+            </div>
+        </section>
+
+        <!-- Tally Course Section (Separate to avoid slider scrolling) -->
+        <section class="bg-white pb-8 mt-4">
+            <div class="max-w-7xl mx-auto px-4 sm:px-8 md:px-12 lg:px-16">
+                <!-- Tally Course Card -->
+                <div id="tally-course"
+                    class="w-full bg-white rounded-[2rem] border border-2 border-slate-100 p-6 sm:p-8 mb-8 shadow-sm hover:shadow-md transition-shadow duration-300 reveal scroll-mt-24">
+                    <div class="flex flex-col md:flex-row gap-6 lg:gap-8 items-center md:items-stretch">
+                        <!-- Left: Heading & Description -->
+                        <div class="md:w-[70%] flex flex-col justify-center text-left md:pr-4">
+                            <div class="flex items-center justify-start gap-3 mb-2">
+                                <div class="border-2 border-blue-200 rounded-xl p-1.5 bg-white">
+                                    <img src="assets/tally.webp" alt="Tally Logo" class="h-8 lg:h-10 w-auto"
+                                        style="filter: brightness(0) saturate(100%) invert(18%) sepia(91%) saturate(3078%) hue-rotate(222deg) brightness(97%) contrast(102%);">
+                                </div>
+                                <h3 class="text-3xl lg:text-4xl font-black text-slate-900">Tally</h3>
+                            </div>
+                            <p class="text-[#574F4A] font-medium leading-relaxed max-w-4xl">
+                                Master accounting, payroll, and taxation with our Tally training. Develop the skills
+                                needed to excel in financial management and business accounting operations efficiently.
+                            </p>
+                        </div>
+
+                        <!-- Right: Sections -->
+                        <div class="md:w-[30%] grid grid-cols-2 gap-4 relative w-full items-center">
+                            <!-- Vertical Line -->
+                            <div class="absolute left-1/2 top-2 bottom-2 w-px bg-slate-200 transform -translate-x-1/2">
+                            </div>
+
+                            <!-- Basics -->
+                            <div class="text-center md:text-left pr-3 flex flex-col justify-center">
+                                <h4 class="text-[20px] font-bold text-slate-800 mb-1">Basics</h4>
+                                <p class="text-slate-500 text-[15px] leading-tight">Payroll & basic GST concepts.</p>
+                            </div>
+
+                            <!-- Advanced -->
+                            <div class="text-center md:text-left pl-3 flex flex-col justify-center">
+                                <h4 class="text-[20px] font-bold text-slate-800 mb-1">Advanced</h4>
+                                <p class="text-slate-500 text-[15px] leading-tight">GST, Vouchers & taxation.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
             </div>
         </section>
 
@@ -1189,7 +1199,7 @@
         </div>
         <div class="text-center mb-8 mt-2 reveal">
             <div class="text-base sm:text-xl text-slate-500 max-w-2xl mx-auto px-4">
-                Our alumni are placed in top tech companies worldwide
+                Our alumni are placed in top tech companies
             </div>
         </div>
 
@@ -2360,9 +2370,10 @@
                                 class="absolute inset-0 bg-gradient-to-t from-indigo-950/70 via-slate-900/40 to-transparent backdrop-blur-[2px] opacity-0 group-hover:opacity-100 transition-all duration-500">
                                 <div class="absolute inset-0 flex items-center justify-center">
                                     <a href="assets/teach.webp"
-                                        class="img-popup w-14 h-14 bg-white/10 hover:bg-white/30 backdrop-blur-md rounded-full flex items-center justify-center border border-white/20 hover:border-white/60 transform translate-y-8 group-hover:translate-y-0 hover:scale-110 hover:shadow-[0_0_20px_rgba(255,255,255,0.6)] active:scale-95 transition-all duration-500 cursor-pointer">
+                                        class="img-popup px-6 py-2.5 gap-2 bg-white/10 hover:bg-white/30 backdrop-blur-md rounded-full flex items-center justify-center border border-white/20 hover:border-white/60 transform translate-y-8 group-hover:translate-y-0 hover:scale-110 hover:shadow-[0_0_20px_rgba(255,255,255,0.6)] active:scale-95 transition-all duration-500 cursor-pointer">
                                         <i
-                                            class="fa-solid fa-expand text-white text-xl transition-transform duration-300 group-hover:scale-110"></i>
+                                            class="fa-solid fa-eye text-white text-xl transition-transform duration-300 group-hover:scale-110"></i>
+                                        <span class="text-white font-semibold tracking-wide">View</span>
                                     </a>
                                 </div>
                             </div>
@@ -2379,9 +2390,10 @@
                                 class="absolute inset-0 bg-gradient-to-t from-indigo-950/70 via-slate-900/40 to-transparent backdrop-blur-[2px] opacity-0 group-hover:opacity-100 transition-all duration-500">
                                 <div class="absolute inset-0 flex items-center justify-center">
                                     <a href="assets/kattur.webp"
-                                        class="img-popup w-14 h-14 bg-white/10 hover:bg-white/30 backdrop-blur-md rounded-full flex items-center justify-center border border-white/20 hover:border-white/60 transform translate-y-8 group-hover:translate-y-0 hover:scale-110 hover:shadow-[0_0_20px_rgba(255,255,255,0.6)] active:scale-95 transition-all duration-500 cursor-pointer">
+                                        class="img-popup px-6 py-2.5 gap-2 bg-white/10 hover:bg-white/30 backdrop-blur-md rounded-full flex items-center justify-center border border-white/20 hover:border-white/60 transform translate-y-8 group-hover:translate-y-0 hover:scale-110 hover:shadow-[0_0_20px_rgba(255,255,255,0.6)] active:scale-95 transition-all duration-500 cursor-pointer">
                                         <i
-                                            class="fa-solid fa-expand text-white text-xl transition-transform duration-300 group-hover:scale-110"></i>
+                                            class="fa-solid fa-eye text-white text-xl transition-transform duration-300 group-hover:scale-110"></i>
+                                        <span class="text-white font-semibold tracking-wide">View</span>
                                     </a>
                                 </div>
                             </div>
@@ -2398,9 +2410,10 @@
                                 class="absolute inset-0 bg-gradient-to-t from-indigo-950/70 via-slate-900/40 to-transparent backdrop-blur-[2px] opacity-0 group-hover:opacity-100 transition-all duration-500">
                                 <div class="absolute inset-0 flex items-center justify-center">
                                     <a href="assets/lab_2.webp"
-                                        class="img-popup w-14 h-14 bg-white/10 hover:bg-white/30 backdrop-blur-md rounded-full flex items-center justify-center border border-white/20 hover:border-white/60 transform translate-y-8 group-hover:translate-y-0 hover:scale-110 hover:shadow-[0_0_20px_rgba(255,255,255,0.6)] active:scale-95 transition-all duration-500 cursor-pointer">
+                                        class="img-popup px-6 py-2.5 gap-2 bg-white/10 hover:bg-white/30 backdrop-blur-md rounded-full flex items-center justify-center border border-white/20 hover:border-white/60 transform translate-y-8 group-hover:translate-y-0 hover:scale-110 hover:shadow-[0_0_20px_rgba(255,255,255,0.6)] active:scale-95 transition-all duration-500 cursor-pointer">
                                         <i
-                                            class="fa-solid fa-expand text-white text-xl transition-transform duration-300 group-hover:scale-110"></i>
+                                            class="fa-solid fa-eye text-white text-xl transition-transform duration-300 group-hover:scale-110"></i>
+                                        <span class="text-white font-semibold tracking-wide">View</span>
                                     </a>
                                 </div>
                             </div>
@@ -2417,9 +2430,10 @@
                                 class="absolute inset-0 bg-gradient-to-t from-indigo-950/70 via-slate-900/40 to-transparent backdrop-blur-[2px] opacity-0 group-hover:opacity-100 transition-all duration-500">
                                 <div class="absolute inset-0 flex items-center justify-center">
                                     <a href="assets/director_3.webp"
-                                        class="img-popup w-14 h-14 bg-white/10 hover:bg-white/30 backdrop-blur-md rounded-full flex items-center justify-center border border-white/20 hover:border-white/60 transform translate-y-8 group-hover:translate-y-0 hover:scale-110 hover:shadow-[0_0_20px_rgba(255,255,255,0.6)] active:scale-95 transition-all duration-500 cursor-pointer">
+                                        class="img-popup px-6 py-2.5 gap-2 bg-white/10 hover:bg-white/30 backdrop-blur-md rounded-full flex items-center justify-center border border-white/20 hover:border-white/60 transform translate-y-8 group-hover:translate-y-0 hover:scale-110 hover:shadow-[0_0_20px_rgba(255,255,255,0.6)] active:scale-95 transition-all duration-500 cursor-pointer">
                                         <i
-                                            class="fa-solid fa-expand text-white text-xl transition-transform duration-300 group-hover:scale-110"></i>
+                                            class="fa-solid fa-eye text-white text-xl transition-transform duration-300 group-hover:scale-110"></i>
+                                        <span class="text-white font-semibold tracking-wide">View</span>
                                     </a>
                                 </div>
                             </div>
@@ -2436,9 +2450,10 @@
                                 class="absolute inset-0 bg-gradient-to-t from-indigo-950/70 via-slate-900/40 to-transparent backdrop-blur-[2px] opacity-0 group-hover:opacity-100 transition-all duration-500">
                                 <div class="absolute inset-0 flex items-center justify-center">
                                     <a href="assets/mou.webp"
-                                        class="img-popup w-14 h-14 bg-white/10 hover:bg-white/30 backdrop-blur-md rounded-full flex items-center justify-center border border-white/20 hover:border-white/60 transform translate-y-8 group-hover:translate-y-0 hover:scale-110 hover:shadow-[0_0_20px_rgba(255,255,255,0.6)] active:scale-95 transition-all duration-500 cursor-pointer">
+                                        class="img-popup px-6 py-2.5 gap-2 bg-white/10 hover:bg-white/30 backdrop-blur-md rounded-full flex items-center justify-center border border-white/20 hover:border-white/60 transform translate-y-8 group-hover:translate-y-0 hover:scale-110 hover:shadow-[0_0_20px_rgba(255,255,255,0.6)] active:scale-95 transition-all duration-500 cursor-pointer">
                                         <i
-                                            class="fa-solid fa-expand text-white text-xl transition-transform duration-300 group-hover:scale-110"></i>
+                                            class="fa-solid fa-eye text-white text-xl transition-transform duration-300 group-hover:scale-110"></i>
+                                        <span class="text-white font-semibold tracking-wide">View</span>
                                     </a>
                                 </div>
                             </div>
@@ -2454,9 +2469,10 @@
                                 class="absolute inset-0 bg-gradient-to-t from-indigo-950/70 via-slate-900/40 to-transparent backdrop-blur-[2px] opacity-0 group-hover:opacity-100 transition-all duration-500">
                                 <div class="absolute inset-0 flex items-center justify-center">
                                     <a href="assets/dot.webp"
-                                        class="img-popup w-14 h-14 bg-white/10 hover:bg-white/30 backdrop-blur-md rounded-full flex items-center justify-center border border-white/20 hover:border-white/60 transform translate-y-8 group-hover:translate-y-0 hover:scale-110 hover:shadow-[0_0_20px_rgba(255,255,255,0.6)] active:scale-95 transition-all duration-500 cursor-pointer">
+                                        class="img-popup px-6 py-2.5 gap-2 bg-white/10 hover:bg-white/30 backdrop-blur-md rounded-full flex items-center justify-center border border-white/20 hover:border-white/60 transform translate-y-8 group-hover:translate-y-0 hover:scale-110 hover:shadow-[0_0_20px_rgba(255,255,255,0.6)] active:scale-95 transition-all duration-500 cursor-pointer">
                                         <i
-                                            class="fa-solid fa-expand text-white text-xl transition-transform duration-300 group-hover:scale-110"></i>
+                                            class="fa-solid fa-eye text-white text-xl transition-transform duration-300 group-hover:scale-110"></i>
+                                        <span class="text-white font-semibold tracking-wide">View</span>
                                     </a>
                                 </div>
                             </div>
@@ -2473,9 +2489,10 @@
                                 class="absolute inset-0 bg-gradient-to-t from-indigo-950/70 via-slate-900/40 to-transparent backdrop-blur-[2px] opacity-0 group-hover:opacity-100 transition-all duration-500">
                                 <div class="absolute inset-0 flex items-center justify-center">
                                     <a href="assets/internship_3.webp"
-                                        class="img-popup w-14 h-14 bg-white/10 hover:bg-white/30 backdrop-blur-md rounded-full flex items-center justify-center border border-white/20 hover:border-white/60 transform translate-y-8 group-hover:translate-y-0 hover:scale-110 hover:shadow-[0_0_20px_rgba(255,255,255,0.6)] active:scale-95 transition-all duration-500 cursor-pointer">
+                                        class="img-popup px-6 py-2.5 gap-2 bg-white/10 hover:bg-white/30 backdrop-blur-md rounded-full flex items-center justify-center border border-white/20 hover:border-white/60 transform translate-y-8 group-hover:translate-y-0 hover:scale-110 hover:shadow-[0_0_20px_rgba(255,255,255,0.6)] active:scale-95 transition-all duration-500 cursor-pointer">
                                         <i
-                                            class="fa-solid fa-expand text-white text-xl transition-transform duration-300 group-hover:scale-110"></i>
+                                            class="fa-solid fa-eye text-white text-xl transition-transform duration-300 group-hover:scale-110"></i>
+                                        <span class="text-white font-semibold tracking-wide">View</span>
                                     </a>
                                 </div>
                             </div>
@@ -2492,9 +2509,10 @@
                                 class="absolute inset-0 bg-gradient-to-t from-indigo-950/70 via-slate-900/40 to-transparent backdrop-blur-[2px] opacity-0 group-hover:opacity-100 transition-all duration-500">
                                 <div class="absolute inset-0 flex items-center justify-center">
                                     <a href="assets/workshop_1.webp"
-                                        class="img-popup w-14 h-14 bg-white/10 hover:bg-white/30 backdrop-blur-md rounded-full flex items-center justify-center border border-white/20 hover:border-white/60 transform translate-y-8 group-hover:translate-y-0 hover:scale-110 hover:shadow-[0_0_20px_rgba(255,255,255,0.6)] active:scale-95 transition-all duration-500 cursor-pointer">
+                                        class="img-popup px-6 py-2.5 gap-2 bg-white/10 hover:bg-white/30 backdrop-blur-md rounded-full flex items-center justify-center border border-white/20 hover:border-white/60 transform translate-y-8 group-hover:translate-y-0 hover:scale-110 hover:shadow-[0_0_20px_rgba(255,255,255,0.6)] active:scale-95 transition-all duration-500 cursor-pointer">
                                         <i
-                                            class="fa-solid fa-expand text-white text-xl transition-transform duration-300 group-hover:scale-110"></i>
+                                            class="fa-solid fa-eye text-white text-xl transition-transform duration-300 group-hover:scale-110"></i>
+                                        <span class="text-white font-semibold tracking-wide">View</span>
                                     </a>
                                 </div>
                             </div>
@@ -2510,9 +2528,10 @@
                                 class="absolute inset-0 bg-gradient-to-t from-indigo-950/70 via-slate-900/40 to-transparent backdrop-blur-[2px] opacity-0 group-hover:opacity-100 transition-all duration-500">
                                 <div class="absolute inset-0 flex items-center justify-center">
                                     <a href="assets/lab_5.webp"
-                                        class="img-popup w-14 h-14 bg-white/10 hover:bg-white/30 backdrop-blur-md rounded-full flex items-center justify-center border border-white/20 hover:border-white/60 transform translate-y-8 group-hover:translate-y-0 hover:scale-110 hover:shadow-[0_0_20px_rgba(255,255,255,0.6)] active:scale-95 transition-all duration-500 cursor-pointer">
+                                        class="img-popup px-6 py-2.5 gap-2 bg-white/10 hover:bg-white/30 backdrop-blur-md rounded-full flex items-center justify-center border border-white/20 hover:border-white/60 transform translate-y-8 group-hover:translate-y-0 hover:scale-110 hover:shadow-[0_0_20px_rgba(255,255,255,0.6)] active:scale-95 transition-all duration-500 cursor-pointer">
                                         <i
-                                            class="fa-solid fa-expand text-white text-xl transition-transform duration-300 group-hover:scale-110"></i>
+                                            class="fa-solid fa-eye text-white text-xl transition-transform duration-300 group-hover:scale-110"></i>
+                                        <span class="text-white font-semibold tracking-wide">View</span>
                                     </a>
                                 </div>
                             </div>
@@ -2529,9 +2548,10 @@
                                 class="absolute inset-0 bg-gradient-to-t from-indigo-950/70 via-slate-900/40 to-transparent backdrop-blur-[2px] opacity-0 group-hover:opacity-100 transition-all duration-500">
                                 <div class="absolute inset-0 flex items-center justify-center">
                                     <a href="assets/workshop.webp"
-                                        class="img-popup w-14 h-14 bg-white/10 hover:bg-white/30 backdrop-blur-md rounded-full flex items-center justify-center border border-white/20 hover:border-white/60 transform translate-y-8 group-hover:translate-y-0 hover:scale-110 hover:shadow-[0_0_20px_rgba(255,255,255,0.6)] active:scale-95 transition-all duration-500 cursor-pointer">
+                                        class="img-popup px-6 py-2.5 gap-2 bg-white/10 hover:bg-white/30 backdrop-blur-md rounded-full flex items-center justify-center border border-white/20 hover:border-white/60 transform translate-y-8 group-hover:translate-y-0 hover:scale-110 hover:shadow-[0_0_20px_rgba(255,255,255,0.6)] active:scale-95 transition-all duration-500 cursor-pointer">
                                         <i
-                                            class="fa-solid fa-expand text-white text-xl transition-transform duration-300 group-hover:scale-110"></i>
+                                            class="fa-solid fa-eye text-white text-xl transition-transform duration-300 group-hover:scale-110"></i>
+                                        <span class="text-white font-semibold tracking-wide">View</span>
                                     </a>
                                 </div>
                             </div>
@@ -2548,9 +2568,10 @@
                                 class="absolute inset-0 bg-gradient-to-t from-indigo-950/70 via-slate-900/40 to-transparent backdrop-blur-[2px] opacity-0 group-hover:opacity-100 transition-all duration-500">
                                 <div class="absolute inset-0 flex items-center justify-center">
                                     <a href="assets/teach_1.webp"
-                                        class="img-popup w-14 h-14 bg-white/10 hover:bg-white/30 backdrop-blur-md rounded-full flex items-center justify-center border border-white/20 hover:border-white/60 transform translate-y-8 group-hover:translate-y-0 hover:scale-110 hover:shadow-[0_0_20px_rgba(255,255,255,0.6)] active:scale-95 transition-all duration-500 cursor-pointer">
+                                        class="img-popup px-6 py-2.5 gap-2 bg-white/10 hover:bg-white/30 backdrop-blur-md rounded-full flex items-center justify-center border border-white/20 hover:border-white/60 transform translate-y-8 group-hover:translate-y-0 hover:scale-110 hover:shadow-[0_0_20px_rgba(255,255,255,0.6)] active:scale-95 transition-all duration-500 cursor-pointer">
                                         <i
-                                            class="fa-solid fa-expand text-white text-xl transition-transform duration-300 group-hover:scale-110"></i>
+                                            class="fa-solid fa-eye text-white text-xl transition-transform duration-300 group-hover:scale-110"></i>
+                                        <span class="text-white font-semibold tracking-wide">View</span>
                                     </a>
                                 </div>
                             </div>
@@ -2567,9 +2588,10 @@
                                 class="absolute inset-0 bg-gradient-to-t from-indigo-950/70 via-slate-900/40 to-transparent backdrop-blur-[2px] opacity-0 group-hover:opacity-100 transition-all duration-500">
                                 <div class="absolute inset-0 flex items-center justify-center">
                                     <a href="assets/meet.webp"
-                                        class="img-popup w-14 h-14 bg-white/10 hover:bg-white/30 backdrop-blur-md rounded-full flex items-center justify-center border border-white/20 hover:border-white/60 transform translate-y-8 group-hover:translate-y-0 hover:scale-110 hover:shadow-[0_0_20px_rgba(255,255,255,0.6)] active:scale-95 transition-all duration-500 cursor-pointer">
+                                        class="img-popup px-6 py-2.5 gap-2 bg-white/10 hover:bg-white/30 backdrop-blur-md rounded-full flex items-center justify-center border border-white/20 hover:border-white/60 transform translate-y-8 group-hover:translate-y-0 hover:scale-110 hover:shadow-[0_0_20px_rgba(255,255,255,0.6)] active:scale-95 transition-all duration-500 cursor-pointer">
                                         <i
-                                            class="fa-solid fa-expand text-white text-xl transition-transform duration-300 group-hover:scale-110"></i>
+                                            class="fa-solid fa-eye text-white text-xl transition-transform duration-300 group-hover:scale-110"></i>
+                                        <span class="text-white font-semibold tracking-wide">View</span>
                                     </a>
                                 </div>
                             </div>
@@ -2588,7 +2610,8 @@
             <div class="max-w-7xl mx-auto px-4 sm:px-12 relative">
                 <div class="text-center mb-16 reveal">
                     <h2 class="text-3xl sm:text-4xl font-bold text-black">Visit Us</h2>
-                    <div class="mt-4 text-slate-500 text-xl font-medium max-w-2xl mx-auto">Find us at any of our three
+                    <div class="text-base sm:text-xl text-slate-500 max-w-2xl mx-auto px-4 mt-4 font-['Inter']">Find us
+                        at any of our three
                         convenient
                         branches</div>
                 </div>
@@ -2956,7 +2979,7 @@
             </div>
         </footer>
 
-        <div class="fixed bottom-6 right-6 sm:bottom-8 sm:right-8 z-[9999] flex flex-col gap-4">
+        <div class="fixed bottom-6 right-3 sm:bottom-8 sm:right-4 z-[9999] flex flex-col gap-4">
             <!-- Phone Call -->
             <a href="tel:+919514076220"
                 class="bg-[#000067] text-white w-12 h-12 sm:w-14 sm:h-14 rounded-full flex items-center justify-center shadow-[0_10px_25px_rgba(0,0,103,0.3)] hover:scale-110 hover:rotate-6 transition-all duration-300 group">
