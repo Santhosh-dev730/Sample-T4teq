@@ -980,7 +980,7 @@ html {
 }
 
 .bg-kishore {
-    background-image: url('assets/kishore.jpg');
+    background-image: url('assets/kishore.webp');
 }
 
 .bg-jayapriya {
@@ -1056,6 +1056,7 @@ html {
     height: 48px !important;
     object-fit: contain;
 }
+
 .bg-vasima {
     background-image: url('assets/vasima.webp');
 }
