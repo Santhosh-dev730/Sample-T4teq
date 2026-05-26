@@ -1,4 +1,4 @@
-@keyframes marquee {
+﻿@keyframes marquee {
     0% {
         transform: translateX(0);
     }
@@ -975,7 +975,7 @@ html {
     background-image: url('assets/ayoop.webp');
 }
 
-.bg-santhosh {
+.bg-jeyaram {
     background-image: url('assets/jeyaram.webp');
 }
 
@@ -1065,12 +1065,15 @@ html {
 .bg-event-gradient {
     background: linear-gradient(90deg, rgba(125, 199, 255, .4), rgba(198, 173, 255, .4), rgba(249, 173, 162, .4), rgba(251, 193, 81, .4));
 }
+
 .text-count-color {
     color: #000067;
 }
+
 .filter-tally-logo {
     filter: brightness(0) saturate(100%) invert(18%) sepia(91%) saturate(3078%) hue-rotate(222deg) brightness(97%) contrast(102%);
 }
+
 .bg-santhosh {
     background-image: url('assets/santhosh.webp');
 }
