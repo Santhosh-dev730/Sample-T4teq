@@ -1,4 +1,4 @@
-﻿@keyframes marquee {
+@keyframes marquee {
     0% {
         transform: translateX(0);
     }
@@ -1076,4 +1076,17 @@ html {
 
 .bg-santhosh {
     background-image: url('assets/santhosh.webp');
+}
+
+@keyframes snack-spin {
+    0% {
+        transform: translate(-50%, -50%) rotate(0deg);
+    }
+    100% {
+        transform: translate(-50%, -50%) rotate(360deg);
+    }
+}
+
+.animate-snack-effect {
+    animation: snack-spin 8s linear infinite;
 }
