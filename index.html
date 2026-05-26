@@ -308,7 +308,7 @@
                                         <i
                                             class="fas fa-users text-2xl text-slate-700 group-hover:text-orange-500 transition-colors"></i>
                                     </div>
-                                    <div>
+                                    <div class="whitespace-nowrap">
                                         <h3 class="text-slate-900 font-bold text-base">TEQ HUB</h3>
                                         <p class="text-slate-400 text-xs font-medium">Join Community</p>
                                     </div>
@@ -320,7 +320,7 @@
                                         class="h-10 w-10 bg-slate-50 rounded-lg flex items-center justify-center group-hover:bg-blue-50 transition-colors flex-shrink-0">
                                         <i class="fas fa-code text-2xl text-slate-700 group-hover:text-blue-600"></i>
                                     </div>
-                                    <div>
+                                    <div class="whitespace-nowrap">
                                         <h3 class="text-slate-900 font-bold text-base">Weekly Task</h3>
                                         <p class="text-slate-400 text-xs font-medium">Let's Code</p>
                                     </div>
@@ -332,7 +332,7 @@
                                         <i
                                             class="fas fa-briefcase text-2xl text-slate-700 group-hover:text-green-600"></i>
                                     </div>
-                                    <div>
+                                    <div class="whitespace-nowrap">
                                         <h3 class="text-slate-900 font-bold text-base">Certificate</h3>
                                         <p class="text-slate-400 text-xs font-medium">Verify now</p>
                                     </div>
@@ -499,8 +499,8 @@
 
         <!-- Event Section -->
         <section class="relative overflow-hidden">
-            <div style="background: linear-gradient(90deg, rgba(125, 199, 255, .4), rgba(198, 173, 255, .4), rgba(249, 173, 162, .4), rgba(251, 193, 81, .4));"
-                class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-10 py-10 relative z-10 rounded-[2.5rem] border border-white/50 shadow-sm">
+            <div
+                class="bg-event-gradient max-w-7xl mx-auto px-4 sm:px-6 lg:px-10 py-10 relative z-10 rounded-[2.5rem] border border-white/50 shadow-sm">
                 <!-- Title -->
                 <div class="mb-8">
                     <h3
@@ -529,17 +529,21 @@
                             <div class="absolute top-0 right-0 w-32 h-32 bg-blue-50 blur-[50px]"></div>
                             <div class="grid grid-cols-1 md:grid-cols-3 gap-5 relative z-10">
                                 <!-- Date -->
-                                <div class="space-y-1 border-b md:border-b-0 md:border-r border-slate-100 pb-4 md:pb-0">
+                                <div class="space-y-1 border-b md:border-b-0 pb-4 md:pb-0 relative">
                                     <div
                                         class="flex items-center gap-2 text-blue-600 uppercase tracking-[0.2em] text-[10px] font-black">
                                         <i class="far fa-calendar-alt"></i>
                                         <span>Date</span>
                                     </div>
                                     <p class="text-slate-900 text-lg lg:text-xl font-black">04 May, 2026</p>
+
+                                    <!-- Ticket Divider -->
+                                    <div
+                                        class="hidden md:block absolute right-[-10px] top-[-20px] lg:top-[-24px] bottom-[-20px] lg:bottom-[-24px] w-px border-l-[2px] border-dashed border-slate-400 z-10">
+                                    </div>
                                 </div>
                                 <!-- Total Slot -->
-                                <div
-                                    class="space-y-1 border-b md:border-b-0 md:border-r border-slate-100 pb-4 md:pb-0 md:pl-4">
+                                <div class="space-y-1 border-b md:border-b-0 pb-4 md:pb-0 md:pl-4 relative">
                                     <div
                                         class="flex items-center gap-2 text-emerald-500 uppercase tracking-[0.2em] text-[10px] font-black">
                                         <i class="fas fa-users"></i>
@@ -548,7 +552,14 @@
                                     <p class="text-slate-900 text-lg lg:text-xl font-black">22 <span
                                             class="text-[10px] font-bold text-slate-500 ml-1 uppercase tracking-widest">Available</span>
                                     </p>
+
+                                    <!-- Ticket Divider -->
+                                    <div
+                                        class="hidden md:block absolute right-[-10px] top-[-20px] lg:top-[-24px] bottom-[-20px] lg:bottom-[-24px] w-px border-l-[2px] border-dashed border-slate-400 z-10">
+                                    </div>
                                 </div>
+
+
                                 <!-- Venue -->
                                 <div class="space-y-1 md:pl-4">
                                     <div
@@ -636,7 +647,7 @@
                     <!-- Left: Content -->
                     <div class="w-full lg:w-[50%] space-y-8 text-left mt-[15px] relative">
                         <div
-                            class="absolute inset-0 flex items-center justify-center opacity-[0.10] pointer-events-none z-0 mix-blend-multiply">
+                            class="absolute inset-0 flex items-center justify-center opacity-[0.03] pointer-events-none z-0 mix-blend-multiply">
                             <img src="assets/logo.png" class="w-full max-w-[350px]" alt="Logo">
                         </div>
                         <div class="space-y-6 relative z-10">
@@ -673,7 +684,7 @@
                                     <div
                                         class="text-[11px] font-bold text-slate-800 text-black uppercase tracking-tight">
                                         Google
-                                        (4.9)</div>
+                                        (4.5)</div>
                                 </div>
                             </div>
 
@@ -806,7 +817,7 @@
 
                     <div class="text-center reveal delay-200">
                         <div class="text-3xl sm:text-4xl font-black text-slate-900">
-                            <span class="count" data-target="20" style="color: #000067;">0</span><span
+                            <span class="count text-count-color" data-target="20">0</span><span
                                 class="text-orange-500">+</span>
                         </div>
                         <div class="text-slate-500 mt-2 font-bold uppercase tracking-widest text-xs">Experienced
@@ -815,7 +826,7 @@
 
                     <div class="text-center reveal delay-300">
                         <div class="text-3xl sm:text-4xl font-black text-slate-900">
-                            <span class="count" data-target="100" style="color: #000067;">0</span><span
+                            <span class="count text-count-color" data-target="100">0</span><span
                                 class="text-orange-500">+</span>
                         </div>
                         <div class="text-slate-500 mt-2 font-bold uppercase tracking-widest text-xs">Software Developed
@@ -823,7 +834,7 @@
                     </div>
                     <div class="text-center reveal delay-100">
                         <div class="text-3xl sm:text-4xl font-black text-slate-900">
-                            <span class="count" data-target="5000" style="color: #000067;">0</span><span
+                            <span class="count text-count-color" data-target="5000">0</span><span
                                 class="text-orange-500">+</span>
                         </div>
                         <div class="text-slate-500 mt-2 font-bold uppercase tracking-widest text-xs">Interview Tasks
@@ -851,13 +862,11 @@
 
 
                 <!-- Programming & Core Data Card -->
-                <div data-nav-color="rgba(168, 213, 186, 0.95)" style="background-color: #A8D5BA; z-index: 10;"
-                    class="mb-[15px] sm:mb-3 skill-card skill-card-sticky p-4 rounded-2xl border-2 border-green-100 shadow-md hover:shadow-lg hover:border-green-200 transition-all duration-300 bg-[#A8D5BA]">
+                <div data-nav-color="rgba(168, 213, 186, 0.95)"
+                    class="z-10 mb-[15px] sm:mb-3 skill-card skill-card-sticky p-4 rounded-2xl border-2 border-green-100 shadow-md hover:shadow-lg hover:border-green-200 transition-all duration-300 bg-[#A8D5BA]">
 
                     <!-- Header Section -->
                     <div class="md:flex items-center gap-2 mb-4" id="skills">
-                        <!-- Icon (Optional: You can keep the original icon or use one from tech.html style) -->
-                        <!-- <img src="..." alt="..." class="h-16 w-16 object-contain"> -->
                         <h2 class="text-xl lg:text-3xl font-bold cursor-pointer bg-clip-text text-black pt-2">
                             Programming &
                             Core Data</h2>
@@ -924,8 +933,8 @@
                 </div>
 
                 <!-- Fullstack Card (Mirrored) -->
-                <div data-nav-color="rgba(191, 215, 255, 0.95)" style="background-color: #BFD7FF; z-index: 20;"
-                    class="mb-[15px] sm:mb-3 skill-card skill-card-sticky p-4 rounded-2xl border-2 border-blue-100 shadow-md hover:shadow-lg hover:border-blue-200 transition-all duration-300 bg-[#BFD7FF]"
+                <div data-nav-color="rgba(191, 215, 255, 0.95)"
+                    class="z-20 mb-[15px] sm:mb-3 skill-card skill-card-sticky p-4 rounded-2xl border-2 border-blue-100 shadow-md hover:shadow-lg hover:border-blue-200 transition-all duration-300 bg-[#BFD7FF]"
                     data-aos="fade-up">
 
                     <!-- Header Section -->
@@ -999,8 +1008,8 @@
                 </div>
 
                 <!-- Data Analytics and Business Intelligence Card -->
-                <div data-nav-color="rgba(254, 240, 138, 0.95)" style="background-color: #FEDAAA; z-index: 30;"
-                    class="mb-[15px] sm:mb-3 skill-card skill-card-sticky p-4 rounded-2xl border-2 border-yellow-100 shadow-md hover:shadow-lg hover:border-yellow-200 transition-all duration-300 bg-[#FEDAAA]"
+                <div data-nav-color="rgba(254, 240, 138, 0.95)"
+                    class="z-30 mb-[15px] sm:mb-3 skill-card skill-card-sticky p-4 rounded-2xl border-2 border-yellow-100 shadow-md hover:shadow-lg hover:border-yellow-200 transition-all duration-300 bg-[#FEDAAA]"
                     data-aos="fade-up">
 
                     <!-- Header Section -->
@@ -1071,8 +1080,8 @@
                 </div>
 
                 <!-- Digital Design and Application development Card (Mirrored) -->
-                <div data-nav-color="rgba(200, 191, 255, 0.95)" style="background-color: #C8BFFF; z-index: 40;"
-                    class="mb-[15px] sm:mb-3 skill-card skill-card-sticky p-4 rounded-2xl border-2 border-purple-100 shadow-md hover:shadow-lg hover:border-purple-200 transition-all duration-300 bg-[#C8BFFF]"
+                <div data-nav-color="rgba(200, 191, 255, 0.95)"
+                    class="z-40 mb-[15px] sm:mb-3 skill-card skill-card-sticky p-4 rounded-2xl border-2 border-purple-100 shadow-md hover:shadow-lg hover:border-purple-200 transition-all duration-300 bg-[#C8BFFF]"
                     data-aos="fade-up">
 
                     <!-- Header Section -->
@@ -1151,40 +1160,49 @@
             <div class="max-w-7xl mx-auto px-4 sm:px-8 md:px-12 lg:px-16">
                 <!-- Tally Course Card -->
                 <div id="tally-course"
-                    class="w-full bg-white rounded-[2rem] border border-2 border-slate-100 p-6 sm:p-8 mb-8 shadow-sm hover:shadow-md transition-shadow duration-300 reveal scroll-mt-24">
-                    <div class="flex flex-col md:flex-row gap-6 lg:gap-8 items-center md:items-stretch">
-                        <!-- Left: Heading & Description -->
-                        <div class="md:w-[70%] flex flex-col justify-center text-left md:pr-4">
-                            <div class="flex items-center justify-start gap-3 mb-2">
-                                <div class="border-2 border-blue-200 rounded-xl p-1.5 bg-white">
-                                    <img src="assets/tally.webp" alt="Tally Logo" class="h-8 lg:h-10 w-auto"
-                                        style="filter: brightness(0) saturate(100%) invert(18%) sepia(91%) saturate(3078%) hue-rotate(222deg) brightness(97%) contrast(102%);">
+                    class="w-full rounded-[2rem] p-[2px] bg-gradient-to-r from-purple-500 via-pink-500 to-orange-500 mb-8 shadow-sm hover:shadow-md transition-shadow duration-300 reveal scroll-mt-24">
+                    <div class="w-full bg-slate-50 rounded-[calc(2rem-2px)] p-6 sm:p-8 h-full">
+                        <div class="flex flex-col md:flex-row gap-6 lg:gap-8 items-center md:items-stretch h-full">
+                            <!-- Left: Heading & Description -->
+                            <div class="md:w-[70%] flex flex-col justify-center text-left md:pr-4 relative">
+                                <div class="flex items-center justify-start gap-3 mb-2">
+                                    <div class="border-2 border-blue-200 rounded-xl p-1.5 bg-white">
+                                        <img src="assets/tally.webp" alt="Tally Logo"
+                                            class="filter-tally-logo h-8 lg:h-10 w-auto">
+                                    </div>
+                                    <h3 class="text-3xl lg:text-4xl font-black text-slate-900">Tally</h3>
                                 </div>
-                                <h3 class="text-3xl lg:text-4xl font-black text-slate-900">Tally</h3>
-                            </div>
-                            <p class="text-[#574F4A] font-medium leading-relaxed max-w-4xl">
-                                Master accounting, payroll, and taxation with our Tally training. Develop the skills
-                                needed to excel in financial management and business accounting operations efficiently.
-                            </p>
-                            
-                        </div>
+                                <p class="text-[#574F4A] font-medium leading-relaxed max-w-4xl">
+                                    Master accounting, payroll, and taxation with our Tally training. Develop the skills
+                                    needed to excel in financial management and business accounting operations
+                                    efficiently.
+                                </p>
 
-                        <!-- Right: Sections -->
-                        <div class="md:w-[30%] grid grid-cols-2 gap-4 relative w-full items-center">
-                            <!-- Vertical Line -->
-                            <div class="absolute left-1/2 top-2 bottom-2 w-px bg-slate-200 transform -translate-x-1/2">
+                                <!-- Ticket Divider -->
+                                <div
+                                    class="hidden md:block absolute right-[-12px] lg:right-[-16px] top-[-24px] sm:top-[-32px] bottom-[-24px] sm:bottom-[-32px] w-px border-l-[2px] border-dashed border-slate-400 z-10">
+                                </div>
                             </div>
 
-                            <!-- Basics -->
-                            <div class="text-center md:text-left pr-3 flex flex-col justify-center">
-                                <h4 class="text-[20px] font-bold text-slate-800 mb-1">Basics</h4>
-                                <p class="text-slate-500 text-[15px] leading-tight">Payroll & basic GST concepts.</p>
-                            </div>
+                            <!-- Right: Sections -->
+                            <div class="md:w-[30%] grid grid-cols-2 gap-4 relative w-full items-center">
+                                <!-- Vertical Line -->
+                                <div
+                                    class="absolute left-1/2 top-2 bottom-2 w-px bg-slate-200 transform -translate-x-1/2">
+                                </div>
 
-                            <!-- Advanced -->
-                            <div class="text-center md:text-left pl-3 flex flex-col justify-center">
-                                <h4 class="text-[20px] font-bold text-slate-800 mb-1">Advanced</h4>
-                                <p class="text-slate-500 text-[15px] leading-tight">GST, Vouchers & taxation.</p>
+                                <!-- Basics -->
+                                <div class="text-center md:text-left pr-3 flex flex-col justify-center">
+                                    <h4 class="text-[20px] font-bold text-slate-800 mb-1">Basics</h4>
+                                    <p class="text-slate-500 text-[15px] leading-tight">Payroll & basic GST concepts.
+                                    </p>
+                                </div>
+
+                                <!-- Advanced -->
+                                <div class="text-center md:text-left pl-3 flex flex-col justify-center">
+                                    <h4 class="text-[20px] font-bold text-slate-800 mb-1">Advanced</h4>
+                                    <p class="text-slate-500 text-[15px] leading-tight">GST, Vouchers & taxation.</p>
+                                </div>
                             </div>
                         </div>
                     </div>
@@ -2082,8 +2100,9 @@
                     <div
                         class="bg-white rounded-2xl shadow-[0_4px_20px_-4px_rgba(0,0,0,0.1)] border border-slate-100 overflow-hidden hover:shadow-[0_8px_30px_-4px_rgba(0,0,0,0.15)] transition-all duration-300 group min-w-[280px] max-w-[320px] flex-shrink-0 snap-start flex flex-col">
                         <div class="h-56 w-full bg-white relative overflow-hidden">
-                            <div class="absolute inset-0 bg-contain bg-bottom bg-no-repeat transition-transform duration-500 group-hover:scale-110"
-                                style="background-image:url('assets/santhosh.webp');"></div>
+                            <div
+                                class="bg-santhosh absolute inset-0 bg-contain bg-bottom bg-no-repeat transition-transform duration-500 group-hover:scale-110">
+                            </div>
                             <div
                                 class="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent opacity-0  transition-opacity duration-300">
                             </div>
@@ -2714,9 +2733,8 @@
 
                                     <iframe id="branch-map"
                                         src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d15675.366299!2d78.680204!3d10.823617!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3baaf5099356391d%3A0x6a0f6a67f18b9cad!2sT4TEQ%20SOFTWARE%20SOLUTIONS!5e0!3m2!1sen!2sin!4v1739328000000!5m2!1sen!2sin&iwloc=0"
-                                        class="event-details__location-map-box w-full h-full transition-all duration-500"
-                                        style="border:0; min-height: 280px;" allowfullscreen="" loading="lazy"
-                                        referrerpolicy="no-referrer-when-downgrade">
+                                        class="event-details__location-map-box w-full h-full transition-all duration-500 border-0 min-h-[280px]"
+                                        allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade">
                                     </iframe>
                                 </div>
 
