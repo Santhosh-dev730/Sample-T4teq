@@ -598,8 +598,10 @@
                             <div class="relative w-full h-full bg-white rounded-[32px] p-5 lg:p-6 flex flex-col z-10">
 
                                 <div class="relative z-30 flex-1 flex flex-col">
-                                    <h4 class="text-xl lg:text-2xl font-black text-slate-800 mb-5 tracking-tight">Data
-                                        Analytics - Workshop</h4>
+                                    <h4
+                                        class="flex items-center gap-3 text-xl lg:text-2xl font-black text-slate-800 mb-5 tracking-tight">
+                                        <span class="whitespace-nowrap">Data Analytics - Workshop</span>
+                                    </h4>
 
                                     <!-- Price -->
                                     <div class="flex items-end gap-2 mb-5">
@@ -980,19 +982,19 @@
                         <ul class="grid grid-cols-4 gap-2 mt-4 lg:mt-0 max-w-60 lg:ml-auto shrink-0">
                             <li
                                 class="w-14 h-14 bg-white rounded-2xl shadow-sm border border-slate-100 flex items-center justify-center p-2">
+                                <img src="assets/web.webp" alt="Web" class="w-full h-full object-contain">
+                            </li>
+                            <li
+                                class="w-14 h-14 bg-white rounded-2xl shadow-sm border border-slate-100 flex items-center justify-center p-2">
                                 <img src="assets/react.svg" alt="React" class="w-full h-full object-contain">
                             </li>
                             <li
                                 class="w-14 h-14 bg-white rounded-2xl shadow-sm border border-slate-100 flex items-center justify-center p-2">
-                                <img src="assets/web.webp" alt="Spring Boot" class="w-full h-full object-contain">
+                                <img src="assets/django.svg" alt="django" class="w-full h-full object-contain">
                             </li>
                             <li
                                 class="w-14 h-14 bg-white rounded-2xl shadow-sm border border-slate-100 flex items-center justify-center p-2">
-                                <img src="assets/django.svg" alt="MongoDB" class="w-full h-full object-contain">
-                            </li>
-                            <li
-                                class="w-14 h-14 bg-white rounded-2xl shadow-sm border border-slate-100 flex items-center justify-center p-2">
-                                <img src="assets/node.svg" alt="Java" class="w-full h-full object-contain">
+                                <img src="assets/node.svg" alt="node" class="w-full h-full object-contain">
                             </li>
                         </ul>
                     </div>
@@ -1002,14 +1004,15 @@
 
                     <!-- Interactive Syllabus Buttons -->
                     <div class="flex flex-wrap gap-4 gap-y-4 mb-6">
-                        <div onclick="showTopics('fs','react', event)"
-                            class="lang-btn bg-[#DBEAFE] p-2 px-6 font-semibold rounded-lg hover:scale-105 transition-all duration-200 cursor-pointer shadow-sm">
-                            React
-                        </div>
                         <div onclick="showTopics('fs','webdev', event)"
                             class="lang-btn bg-[#FFEDD5] p-2 px-6 font-semibold rounded-lg hover:scale-105 transition-all duration-200 cursor-pointer shadow-sm">
                             Web Development
                         </div>
+                        <div onclick="showTopics('fs','react', event)"
+                            class="lang-btn bg-[#DBEAFE] p-2 px-6 font-semibold rounded-lg hover:scale-105 transition-all duration-200 cursor-pointer shadow-sm">
+                            React
+                        </div>
+
                         <div onclick="showTopics('fs','spring', event)"
                             class="lang-btn bg-[#DCFCE7] p-2 px-6 font-semibold rounded-lg hover:scale-105 transition-all duration-200 cursor-pointer shadow-sm">
                             Spring Boot
